@@ -1,0 +1,12 @@
+.sobre{ display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+.sobre-text p{ font-size:1.02rem; color:var(--ink-soft); }
+.stats-row{
+ display:grid; grid-template-columns:repeat(3,1fr); gap:0;
+border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+}
+.stats-row .stat{
+padding:22px 18px; border-right:1px solid var(--line);
+}
+.stats-row .stat:last-child{ border-right:none; }
+.stat .num{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:2.1rem; color:var(--navy);}
+.stat .lbl{ font-family:'IBM Plex Mono',monospace; font-size:.7rem; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.05em; margin-top:4px;}

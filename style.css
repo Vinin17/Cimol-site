@@ -78,24 +78,13 @@
     display:flex; align-items:center; gap:12px;
     text-decoration:none; color:var(--ink);
   }
-  .brand-plate{
-    width:42px; height:42px;
-    background:var(--navy);
-    border-radius:3px;
-    display:flex; align-items:center; justify-content:center;
-    color:var(--paper);
-    font-family:'Space Grotesk', sans-serif;
-    font-weight:700; font-size:1.05rem;
-    position:relative;
-    flex-shrink:0;
+ .brand-plate{
+  width:42px; height:42px;
+  border-radius:3px;
+  object-fit:contain;
+  flex-shrink:0;
   }
-  .brand-plate::before,.brand-plate::after{
-    content:"";
-    position:absolute; width:3px; height:3px; border-radius:50%;
-    background:var(--amber); top:4px;
-  }
-  .brand-plate::before{left:4px;}
-  .brand-plate::after{right:4px;}
+
   .brand-name{ line-height:1.15; }
   .brand-name strong{ display:block; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem;}
   .brand-name span{ display:block; font-size:.68rem; color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; letter-spacing:.04em;}
